@@ -99,7 +99,7 @@
                           resizable : 'yes',
                           close_previous : 'no',
                           onMessage: (api, message) => {
-                            callback(message.content);
+                            callback(message.content.replace(window.location.origin,''));
                           }
                         });
                         //alert(cmsURL);
